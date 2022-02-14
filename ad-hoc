@@ -30,3 +30,7 @@ ansible <hosts> -m file -a "path=<path where we will create folder> state=direct
 
 
 
+custom facts
+============
+create /etc/ansible/facts.d directory in managed nodes
+
