@@ -1,0 +1,32 @@
+copy module
+============
+
+anisible <hosts> -m copy -a "src=<file> dest=/tmp/inventory"
+
+write some content in remote file if we to backup of file add "backup=y" in end of command
+
+ansible <hosts> -m copy -a "content='some content' dest=/tmp/file.txt
+
+
+Downlaod file from managed nodes 
+fetch module
+=============
+
+ansible <hosts> -m fetch -a "src=<destination of file> dest=<where we want to save>/{{inventory_hostname}}_filename.txt"
+
+Create, delete files or directories
+file module
+============
+
+create file
+ansible <hosts> -m file -a "path=<path where we will create file> state=touch"
+ 
+
+delete file
+ansible <hosts> -m file -a "path=<path where we will create file> state=absent"
+
+create directory
+ansible <hosts> -m file -a "path=<path where we will create folder> state=directory"
+
+
+
