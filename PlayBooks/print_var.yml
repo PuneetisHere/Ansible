@@ -1,0 +1,7 @@
+---
+ - name: Usage of debug module
+   hosts: servers
+   tasks:
+   - name: print a variable value using debug module
+     debug:
+      msg: "This host name is : {{inventory_hostname}}"

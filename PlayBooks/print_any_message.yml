@@ -1,0 +1,11 @@
+---
+ - name: This is a simple play to understand debug module
+   hosts: servers
+   tasks:
+   - name: printing a msg   
+     debug:
+      msg: 
+       -  "This is working fine :)"  
+       -  "ohter message"
+       -  "third line"    
+#- debug: msg="This is working fine !! :)"
