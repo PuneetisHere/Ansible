@@ -1,0 +1,16 @@
+---
+ - hosts: servers
+   vars: 
+     x: 10
+     my_name: "puneet"
+   vars_prompt:
+    name: y
+    prompt: Enter the value for y
+    private: false
+   gather_facts: false
+   tasks:
+   - debug:
+      msg:
+       - "the x value is: {{x}}"
+       - "The my_name value is: {{my_name}}"
+       - "The y vlaue is: {{y}}"
