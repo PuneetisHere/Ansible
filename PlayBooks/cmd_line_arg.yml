@@ -8,4 +8,4 @@
      msg:
      - "The x value is: {{x}}"
      - "The y value is: {{y}}"
- # putt in command line as "x=? y=?"
+ # putt in command line as -e "x=? y=?"
