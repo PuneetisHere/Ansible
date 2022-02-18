@@ -4,4 +4,8 @@
    x: 5
   gather_facts: false
   tasks:
-  - debug: var=x
+  - debug: 
+     msg:
+     - "The x value is: {{x}}"
+     - "The y value is: {{y}}"
+ # putt in command line as "x=? y=?"
